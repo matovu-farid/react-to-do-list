@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaTrash } from "react-icons/fa"
 import './TodoItem.css'
 
 
@@ -23,7 +24,7 @@ function TodoListItem({todo:{title,completed,id},onChange,onDelete,setUpdate}) {
     return (
     <li><div onDoubleClick={handleEditing} style={viewMode}>
         <input type="checkbox"   checked={completed} onChange={()=>onChange(id)}/> 
-    <button onClick={()=>onDelete(id)}>Delete</button>
+    <button onClick={()=>onDelete(id)}><FaTrash /></button>
     {title}
     </div>
     <input style={editMode} value={title}  onChange={({target:{value}}) => {

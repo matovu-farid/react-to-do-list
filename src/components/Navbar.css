@@ -1,0 +1,9 @@
+.active {
+  color: orangered;
+  text-decoration: underline;
+}
+
+.non-active {
+  color: blue;
+  text-decoration: none;
+}
