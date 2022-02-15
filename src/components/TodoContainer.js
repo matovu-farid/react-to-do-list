@@ -47,12 +47,22 @@ export default class TodoContainer extends React.Component {
            todos: todos.filter((todo)=>!(todo.id===id))
          }))
        }
+       setUpdate = (updatedTitle, id) => {
+        this.setState({
+          todos: this.state.todos.map(todo => {
+            if (todo.id === id) {
+              todo.title = updatedTitle
+            }
+            return todo
+          }),
+        })
+      }
   render() {
     return (
         <>
         <Header/>
         <InputTodo addToDoItem={this.addToDoItem} />
-        <TodoList todos={this.state.todos} onChange={this.onChange} onDelete={this.onDelete}/>
+        <TodoList todos={this.state.todos} setUpdate={this.setUpdate} onChange={this.onChange} onDelete={this.onDelete}/>
         </>
     )
   }
