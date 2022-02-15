@@ -22,7 +22,7 @@ function TodoListItem({todo:{title,completed,id},onChange,onDelete,setUpdate}) {
           }
       }
     return (
-    <li><div onDoubleClick={handleEditing} style={viewMode}>
+    <li className="item"><div onDoubleClick={handleEditing} style={viewMode}>
         <input type="checkbox"   checked={completed} onChange={()=>onChange(id)}/> 
     <button onClick={()=>onDelete(id)}><FaTrash /></button>
     {title}

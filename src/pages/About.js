@@ -28,7 +28,7 @@ const AboutItem = () => {
 const About = () => { 
   return <>
   <h1>About page</h1>
-  <ul>
+  <ul className="nav-list">
     <li>
     <NavLink to='author'>
       About-author 

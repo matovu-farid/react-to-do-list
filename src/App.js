@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import TodoContainer from "./components/TodoContainer"
 import {About, AboutItem} from "./pages/About";
 import NotMatch from "./pages/NotMatch";
+import './App.css'
 
 const App = () => {
   return <>

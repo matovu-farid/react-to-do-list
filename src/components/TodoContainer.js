@@ -58,11 +58,11 @@ const TodoContainer = () => {
       }
  
     return (
-        <>
+        <main>
         <Header/>
         <InputTodo addTodoProps={addToDoItem} />
         <TodoList todos={todos} setUpdate={setUpdate} onChange={onChange} onDelete={onDelete}/>
-        </>
+        </main>
     )
   
 }
