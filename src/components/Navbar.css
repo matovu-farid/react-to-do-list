@@ -1,0 +1,21 @@
+.active {
+  color: orangered;
+  text-decoration: underline;
+}
+
+.non-active {
+  color: blue;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-list > li {
+  list-style-type: none;
+  margin: 10px;
+
+}
+
